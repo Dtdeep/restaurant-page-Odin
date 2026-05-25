@@ -1,7 +1,9 @@
 import catImage from "./assets/homepage-cat.jpeg"
-import {childContent} from "./removeChildContainer.js"
+import {childContent, removeAllChild} from "./removeChildContainer.js"
 
 const createHompage = () =>{
+    removeAllChild();
+    
     childContent.classList.add("homepage");
 
     const image = document.createElement("img");
