@@ -5,7 +5,5 @@ const removeAllChild = () =>{
         childContent.removeChild(childContent.firstChild);
     }
 }
-    
 
-
-export {childContent, removeAllChild}; 
+export {childContent, removeAllChild};
