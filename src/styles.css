@@ -78,3 +78,28 @@ footer{
    justify-content: center;
 } 
 
+.menu > .product{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px,1fr));
+    grid-template-rows: 50px;
+    grid-auto-rows: 1fr;
+}
+
+.product > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    h4{
+        text-align: center;
+     }
+}
+
+.product > .title{
+    grid-column: 1/-1;
+    place-self: center;
+
+}
+
+.product img{
+    width: 100%;
+}
