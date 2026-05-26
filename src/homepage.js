@@ -4,6 +4,8 @@ import {childContent, removeAllChild} from "./removeChildContainer.js"
 const createHompage = () =>{
     removeAllChild();
     
+    childContent.classList.remove("menu");
+    childContent.classList.remove("contact");
     childContent.classList.add("homepage");
 
     const image = document.createElement("img");
@@ -15,7 +17,6 @@ const createHompage = () =>{
     divDescription.classList.add("description")
     pDescription.textContent = "Mikay's Cat Cafe is where you can enjoy delicious food while dining with adorable rescue cats. Our menu features international cuisine and specialty beverages. Every visit helps us provide care and forever homes for cats in need. Book your table today!"
     divDescription.appendChild(pDescription);
-
 
     const workingHours = [
         "Sunday: 10:00 AM - 6:00 PM",
