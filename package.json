@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Dtdeep/restaurant-page-Odin.git"
@@ -25,6 +22,11 @@
     "style-loader": "^4.0.0",
     "webpack": "^5.107.1",
     "webpack-cli": "^7.0.2",
-    "webpack-dev-server": "^5.2.4"
+    "webpack-dev-server": "^5.2.4",
+    "webpack-merge": "^6.0.1"
+  },
+  "scripts":{
+    "start": "webpack serve --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   }
 }
